@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,500&display=swap");
+
+body {
+  background-color: #141414;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  color: #f1f1f1;
+}
+
+section {
+  margin-bottom: 64px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: right;
+  margin-top: 26px;
+}
+.logo-container {
+  display: flex;
+  width: 100%;
+  height: 7.8vw;
+  position: absolute;
+  justify-content: center;
+}
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  z-index: 10;
+}
+.menu-link {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: right;
+  color: #ffffff;
+  margin: 6px 0;
+}
+
+.hero-section {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  flex-direction: column;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  padding-left: 200px;
+  padding-right: 200px;
+  box-sizing: border-box;
+}
+.hero-title {
+  font-size: 8vw;
+  text-align: left;
+  color: #ffffff;
+  -webkit-text-shadow: 2px 2px 0px #f9b2a8;
+  text-shadow: 2px 2px 0px #f9b2a8;
+}
+.video-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#hero-video {
+  width: 100vw;
+  height: 132vh;
+  object-fit: cover;
+  z-index: -10;
+}
+.hero-p-container {
+  display: flex;
+  justify-content: center;
+  padding: 42px 95px 0;
+}
+.hero-section p {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  max-width: 580px;
+}
+
+.section-title {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+.section-link-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 42px;
+  box-sizing: border-box;
+}
+.section-link {
+  transition-property: color;
+  transition-duration: 300ms;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-link:link {
+  color: #cfcfcf;
+}
+.section-link:visited {
+  color: #c9a095;
+}
+.section-link:hover {
+  color: #ffffff;
+}
+.section-link:active {
+  color: #f1f1f1;
+}
+
+.selected-works-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 8px 0 2%;
+}
+.selected-work {
+  width: calc((100% / 2) - (2 * 5px));
+  box-sizing: content-box;
+  margin: 1% 0 1.5% 10px;
+  /* utiliser plutôt la proprieté gap */
+}
+.sw-image {
+  width: 100%;
+}
+.sw-title {
+  transition-property: color;
+  transition-duration: 300ms;
+  margin: 10px 0 32px 10px;
+  color: #c9a095;
+}
+.sw-link {
+  margin: 0;
+  text-decoration: none;
+}
+.sw-title:link {
+  color: #c9a095;
+}
+.sw-title:visited {
+  color: #c9a095;
+}
+.sw-title:hover {
+  color: #f0ded9;
+}
+.sw-title:active {
+  color: #c8b2ab;
+}
+.selected-references {
+  margin-bottom: 82px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer-hr {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 32px;
+  border: 0;
+  border-top: 1px solid #cfcfcf;
+  width: 100%;
+  max-width: 1100px;
+}
+.footer-link {
+  transition-property: color;
+  transition-duration: 200ms;
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin: 0 8px 8px;
+}
+.footer-link:link {
+  color: #f1f1f1;
+}
+.footer-link:visited {
+  color: #c9a095;
+}
+.footer-link:hover {
+  color: #cfcfcf;
+}
+.footer-link:active {
+  color: #f1f1f1;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    margin-bottom: 84px;
+  }
+
+  .menu-link {
+    font-size: 18px;
+  }
+  .header-menu {
+    margin-right: 10px;
+  }
+
+  .hero-title {
+    -webkit-text-shadow: 3px 3px 0px #f9b2a8;
+    text-shadow: 3px 3px 0px #f9b2a8;
+  }
+  .hero-p-container {
+    padding-top: 80px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+  .section-link-container {
+    margin-bottom: 82px;
+  }
+
+  .selected-works-container {
+    margin: 0 4% 0 7.7%;
+  }
+  .selected-work {
+    width: calc((100% / 4) - (4 * 6px));
+    margin: 1% 0 1.5% 20px;
+  }
+  .sw-title {
+    margin: 10px 0 20px;
+  }
+
+  .footer-hr {
+    margin-top: 140px;
+    margin-bottom: 42px;
+  }
+  .footer-link {
+    font-size: 16px;
+    margin-bottom: 42px;
+  }
+}
